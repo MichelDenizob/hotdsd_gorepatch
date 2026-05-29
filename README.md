@@ -17,6 +17,20 @@ gore-enabled pak **by logic** — every edit is reconstructed and documented fro
 vanilla bytes (no prebuilt diff, no asset blob). Single self-contained C file; the only
 dependency is zlib.
 
+## What this restores
+
+SEGA developed three gore effects for this game but **disabled all of them before
+release due to censorship** — documented on the HOTD wiki, *[List of unused content in
+House of the Dead: Scarlet Dawn](https://thehouseofthedead.fandom.com/wiki/List_of_unused_content_in_House_of_the_Dead:_Scarlet_Dawn)*:
+
+> "Three increasingly violent gore effects were developed. Due to censorship, none of
+> them were used." — (1) burn marks; (2) a creature's flesh burns away to reveal the
+> bones, which then collapse; (3) flesh turns to ash and scatters.
+
+The game data still ships **four unused "burned" models** (`Burned_Small/Middle/Large/Fat`).
+This patch re-enables **variant (2)**: it binds the orphaned burned-flesh body, reveals it
+through bullet damage, and drops the skeleton at death — the effect SEGA originally intended.
+
 ## Build
 
 ```bash
