@@ -1,5 +1,6 @@
 /* ============================================================================
  *
+ *
  *           House of the Dead: Scarlet Dawn  --  gore restoration (source)
  *                     created by   M I C H E L   D E N I Z O B
  *
@@ -7,6 +8,16 @@
 
 /* ============================================================================
  * hotd_gore_patch.c — House of the Dead: Scarlet Dawn ("Hodzero", UE4.18) gore restore.
+ *
+ *   Restores the gore effects SEGA developed for the game but DISABLED before release
+ *   due to censorship. Per the HOTD wiki ("List of unused content in House of the Dead:
+ *   Scarlet Dawn"): "Three increasingly violent gore effects were developed. Due to
+ *   censorship, none of them were used" -- (1) burn marks; (2) a creature's flesh burns
+ *   away to reveal the bones, which then collapse; (3) flesh turns to ash. The game data
+ *   still ships four unused "burned" models (Burned_Small/Middle/Large/Fat). This tool
+ *   re-enables variant (2): the bound burned-flesh body shows through damage, then the
+ *   skeleton -- the effect SEGA originally intended.
+ *   Ref: https://thehouseofthedead.fandom.com/wiki/List_of_unused_content_in_House_of_the_Dead:_Scarlet_Dawn
  *
  *   ONE self-contained, documented patcher. Every change is reconstructed by
  *   logic from a *vanilla* pak and explained below.
